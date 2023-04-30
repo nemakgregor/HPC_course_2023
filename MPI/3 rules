@@ -1,0 +1,31 @@
+if (local_array[i - 1] + local_array[i + 1] == 2)
+      local_next[i] = 1;
+else
+   local_next[i] = 0;
+
+0 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 1 0 1 0 0 
+0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 
+
+
+if (local_array[i - 1]  + local_array[i+1] > 0)
+    local_next[i] = 1;
+else 
+    local_next[i] = 0;
+1 0 1 1 0 1 0 1 0 1 
+0 1 0 0 1 0 1 0 1 1 
+1 0 1 1 0 1 0 1 0 1 
+0 1 0 0 1 0 1 0 1 1 
+
+
+if (local_array[i - 1]  + local_array[i+1] - local_array[i] > 0)
+    local_next[i] = 1;
+else 
+    local_next[i] = 0;
+
+0 1 0 1 0 1 0 0 1 0 
+1 0 1 0 1 0 1 1 0 0 
+0 1 0 1 0 1 0 0 1 0 
+1 0 1 0 1 0 1 1 0 0 
